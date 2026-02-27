@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zyan | Creative Player</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <div class="logo-icon"><span>///</span></div>
+            <span class="logo-text">MEET</span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html" class="active">HOME <i class="ph ph-caret-down"></i></a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="blog.html">BLOG <i class="ph ph-caret-down"></i></a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <div class="menu-btn" id="mobile-menu-btn">
+            <i class="ph ph-list"></i>
+        </div>
+    </nav>
+
+    <main class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                HI, I'M MEET!<br>
+                <span class="outline-text">CREATIVE</span><span class="highlight">PLAYER</span>
+            </h1>
+            <p class="hero-desc">
+                I'm a passionate UI/UX designer with a mission to create delightful and
+                intuitive digital experiences. With a strong foundation in design principles and
+                a keen eye for detail, I specialize in translating complex ideas into user-friendly interfaces that captivate and engage.
+            </p>
+            <div class="hero-actions">
+                <a href="#" class="btn btn-primary">Download CV <i class="ph ph-download-simple"></i></a>
+                <a href="#" class="btn btn-video">
+                    <div class="play-icon"><i class="ph-fill ph-play"></i></div>
+                    Watch The Video
+                </a>
+            </div>
+        </div>
+        <div class="hero-image-wrapper">
+            <div class="hexagon-container">
+                <!-- SVG for the broken hexagon border -->
+                <svg class="hexagon-border-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <path class="hex-path left-path" d="M 15 25 L 50 5 L 85 25" fill="none" stroke="var(--accent-color)" stroke-width="2" vector-effect="non-scaling-stroke" />
+                    <path class="hex-path right-path" d="M 85 75 L 50 95 L 15 75" fill="none" stroke="var(--accent-color)" stroke-width="2" vector-effect="non-scaling-stroke" />
+                    <path class="hex-path side-left" d="M 10 35 L 10 65" fill="none" stroke="var(--accent-color)" stroke-width="4" vector-effect="non-scaling-stroke" />
+                    <path class="hex-path side-right" d="M 90 35 L 90 65" fill="none" stroke="var(--accent-color)" stroke-width="4" vector-effect="non-scaling-stroke" />
+                </svg>
+
+                <div class="hexagon-image">
+                    <img src="Meet 1.png" alt="Meet Portrait">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- GSAP Core & Plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
